@@ -31,8 +31,14 @@ public class WordGames
     /*isogram (en español existe isograma, pero no tiene nada que ver), palabra 
     o texto en el que cualquiera de sus letras sólo aparece una vez
     */
-    public boolean isogram(char []words)
+    public boolean isogram(Character[] words)
     {
+        Set<Character> wordSet= new HashSet<>(Arrays.asList(words));           
+        for(char c: words)
+        {
+            
+        }
+        
         return false;
     }
     
