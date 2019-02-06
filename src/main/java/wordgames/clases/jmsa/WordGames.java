@@ -5,6 +5,11 @@
  */
 package wordgames.clases.jmsa;
 
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 /**
  *
  * @author jmsa
@@ -13,9 +18,15 @@ public class WordGames
 {
 /*¿está bien trabajar con arrays de char o mejor con strings?
  */
-    
+  
+    private final List<Character> abcdario;
+    private final Set<Character> abcdario_Set;
     public WordGames()
     {
+       abcdario=Arrays.asList('a','b','c','e','d','e','f','g','h','i','j','a','l'
+               ,'m','n','ñ','o','p','q','r','s','t','u','v','w','x','y','z');
+       abcdario_Set  = new HashSet<>(abcdario);    
+      System.out.println(abcdario_Set);
     }
     /*isogram (en español existe isograma, pero no tiene nada que ver), palabra 
     o texto en el que cualquiera de sus letras sólo aparece una vez
